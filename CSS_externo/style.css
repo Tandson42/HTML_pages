@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    color: #333;
+    margin: 20px;
+  }
+  
+  #titulo {
+    color: darkred;
+    text-align: center;
+  }
+  
+  .menu {
+    list-style-type: none;
+    background-color: #f2d9c7;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .menu li {
+    display: inline;
+    margin: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: brown;
+  }
+  
+  a:hover {
+    color: darkgreen;
+  }
+  
+  .destaque {
+    color: darkblue;
+    font-size: 18px;
+  }
+  
