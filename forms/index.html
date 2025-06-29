@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games.NET - Pesquisa de Interesse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Bem-vindo à Games.NET</h1>
+  <h2>Participe da nossa pesquisa de mercado!</h2>
+
+  <form action="/enviar_formulario" method="POST">
+
+    <!-- 1. Nome (text) -->
+    <label for="name">Nome:</label><br>
+    <input type="text" id="name" name="name" placeholder="Digite seu nome"><br><br>
+
+    <!-- 2. E-mail (email) -->
+    <label for="email">E-mail:</label><br>
+    <input type="email" id="email" name="email" placeholder="Digite seu e-mail"><br><br>
+
+    <!-- 3. Data de nascimento (date) -->
+    <label for="data">Data de nascimento:</label><br>
+    <input type="date" id="data" name="data"><br><br>
+
+    <!-- 4. Faixa etária (radio) -->
+    <p>Faixa etária:</p>
+    <input type="radio" id="faixa1" name="faixa" value="menor18">
+    <label for="faixa1">Menor de 18</label><br>
+    <input type="radio" id="faixa2" name="faixa" value="18-30">
+    <label for="faixa2">18 a 30 anos</label><br>
+    <input type="radio" id="faixa3" name="faixa" value="acima30">
+    <label for="faixa3">Acima de 30</label><br><br>
+
+    <!-- 5. Gêneros favoritos (checkbox) -->
+    <p>Quais gêneros você mais gosta?</p>
+
+    <div class="checkbox-item">
+      <input type="checkbox" id="acao" name="genero[]" value="Ação">
+      <label for="acao">Ação</label>
+    </div>
+
+    <div class="checkbox-item">
+      <input type="checkbox" id="aventura" name="genero[]" value="Aventura">
+      <label for="aventura">Aventura</label>
+    </div>
+
+    <div class="checkbox-item">
+      <input type="checkbox" id="terror" name="genero[]" value="Terror">
+      <label for="terror">Terror</label>
+    </div>
+
+    <div class="checkbox-item">
+      <input type="checkbox" id="rpg" name="genero[]" value="RPG">
+      <label for="rpg">RPG</label>
+    </div>
+
+    <!-- 6. Plataforma preferida (select) -->
+    <label for="plataforma">Qual plataforma você usa?</label><br>
+    <select id="plataforma" name="plataforma">
+      <option value="">Selecione</option>
+      <option value="pc">PC</option>
+      <option value="console">Console</option>
+      <option value="mobile">Celular</option>
+    </select><br><br>
+
+    <!-- 7. Jogo desejado (textarea) -->
+    <label for="jogo">Que jogo você gostaria de comprar?</label><br>
+    <textarea id="jogo" name="jogo" rows="3" cols="40" placeholder="Digite aqui..."></textarea><br><br>
+
+    <!-- 8. Notificação (checkbox) -->
+    <input type="checkbox" id="notificacao" name="notificacao" value="sim">
+    <label for="notificacao">Quero ser avisado por e-mail sobre promoções</label><br><br>
+
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
