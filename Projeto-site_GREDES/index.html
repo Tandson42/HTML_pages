@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G-REDES - Grupo de Pesquisa</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <img src="imagens/logo.png" alt="Logo G-REDES" class="logo">
+        <h1>G-REDES - Grupo de Pesquisa em Redes de Computadores</h1>
+    </header>
+
+    <!-- Menu -->
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="integrantes.html">Integrantes</a></li>
+            <li><a href="artigos.html">Artigos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <nav class="menu-barra">
+        <input type="checkbox" name="barra" id="barra">
+        <label for="barra" id="btn-barra"><img src="imagens/menu-cllr.svg" alt="Menu"></label>
+        <div class="ul-barra">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="integrantes.html">Integrantes</a></li>
+                <li><a href="artigos.html">Artigos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Carrossel / Notícias -->
+    <section class="carrossel">
+        <input type="radio" name="slide" id="item1">
+        <input type="radio" name="slide" id="item2">
+        <input type="radio" name="slide" id="item3">
+
+        <div class="slides">
+            <div class="slide" id="slide1"><img src="imagens/competicao.jpeg" alt="Notícia 1"></div>
+            <div class="slide" id="slide2"><img src="imagens/cipi.jpeg" alt="Notícia 2"></div>
+            <div class="slide" id="slide3"><img src="imagens/ict_comp-sl.png" alt="Notícia 3"></div>
+        </div>
+        <div class="slide-navegation">
+            <label for="item1"></label>
+            <label for="item2"></label>
+            <label for="item3"></label>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre">
+        <div class="geral">
+            <h1>Sobre o G-REDES</h1>
+            <h3>Pesquisa em redes de computador</h3>
+            <p>O G-REDES é o Grupo de Pesquisa em Redes de Computadores do IFTO, liderado pelo professor Dr. Cláudio de
+                Castro Monteiro. Nosso objetivo é combinar teoria e prática para criar projetos inovadores na área de
+                redes de computadores.</p>
+            <br>
+            <p>Acreditamos que a pesquisa deve gerar soluções reais. Por isso, transformamos nosso conhecimento em
+                projetos com impacto no mercado e na sociedade. Se você quer fazer a diferença e contribuir para o
+                futuro da tecnologia, o G-REDES é o lugar certo para você.</p>
+        </div>
+        <div class="missao">
+            <h2 style="border: none; padding: 0; display: flex; gap: .75rem;">
+                <img src="imagens/target-icon.svg">
+                Missão
+            </h2>
+            <p>Promover a pesquisa e o desenvolvimento de soluções inovadoras em redes de computadores, capacitando
+                novos talentos e contribuindo para o avanço tecnológico.</p>
+        </div>
+        <div class="visao">
+            <h2 style="border: none; padding: 0; display: flex; gap: .75rem;">
+                <img src="imagens/academy-icon.svg" alt="Icóne de capelo">
+                Visão acadêmica
+            </h2>
+            <p>Tornar-se um polo de excelência em pesquisa e desenvolvimento, atraindo e formando os melhores
+                pesquisadores para enfrentar os desafios do futuro em redes de computadores.</p>
+        </div>
+
+    </section>
+
+    <!-- Repercussão -->
+    <section id="repercussao">
+        <h2>Repercussão</h2>
+        <p>Apesar do pouco tempo de criação, o G-REDES já produziu artigos publicados em eventos nacionais e
+            internacionais,
+            além de periódicos indexados pela CAPES. O grupo busca ampliar cada vez mais sua atuação em pesquisa e
+            inovação.</p>
+    </section>
+
+
+    <!-- Rodapé -->
+    <footer id="contato">
+        <div class="rodape-content">
+            <div class="rodape-gredes">
+                <h2 style="border: none; color: #fff;">G-REDES</h2>
+                <p>Instituto Federal de Educação, Ciência e Tecnologia do Tocantins</p>
+            </div>
+            <div class="rodape-contato">
+                <h2>Contato</h2>
+                <p>ccm@ifto.edu.br</p>
+                <p>(63) 3233-1300</p>
+                <p><a href="gredes.ifto.edu.br" target="_blank" rel="noopener noreferrer">gredes.ifto.edu.br</a></p>
+            </div>
+            <div class="rodape-end">
+                <h2>Endereço</h2>
+                <p>Quadra AE 310 Sul Avenida NS 10, Plano Diretor Sul - Palmas/TO - CEP 77021-090</p>
+            </div>
+        </div>
+        <!-- <p>&copy; 2025 G-REDES - IFTO</p> -->
+    </footer>
+
+</body>
+
+</html>
