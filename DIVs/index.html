@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo com DIV e Posicionamento</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
+
+        /* Cabeçalho fixo (position: fixed) */
+        .header {
+            background: #004b87;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed; /* Fixa no topo */
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        /* Espaço para compensar o header fixo */
+        .space {
+            height: 80px;
+        }
+
+        /* Menu sticky */
+        .menu {
+            background: #0077c2;
+            color: white;
+            padding: 15px;
+            position: sticky; /* Fica preso ao topo quando rola */
+            top: 80px;
+        }
+
+        .menu a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Container principal */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Caixa com position: static (padrão) */
+        .box-static {
+            width: 200px;
+            height: 150px;
+            background: #cce5ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Caixa com position: relative */
+        .box-relative {
+            width: 200px;
+            height: 150px;
+            background: #d4edda;
+            position: relative;
+            left: 20px; /* move um pouco */
+        }
+
+        /* Caixa com position: absolute */
+        .box-absolute {
+            width: 200px;
+            height: 150px;
+            background: #fff3cd;
+            position: absolute;
+            top: 300px;
+            right: 50px;
+        }
+
+        /* Caixa com position: fixed */
+        .box-fixed {
+            width: 150px;
+            height: 100px;
+            background: #f8d7da;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #a71d2a;
+        }
+
+        .content {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho fixo -->
+    <div class="header">
+        <h1>Exemplo com DIV e Posicionamento</h1>
+    </div>
+
+    <div class="space"></div> <!-- Espaço para compensar o header fixo -->
+
+    <!-- Menu sticky -->
+    <div class="menu">
+        <a href="#">Início</a>
+        <a href="#">Serviços</a>
+        <a href="#">Contato</a>
+    </div>
+
+    <!-- Conteúdo -->
+    <div class="container">
+        <div class="box-static">Static</div>
+        <div class="box-relative">Relative</div>
+        <div class="box-absolute">Absolute</div>
+    </div>
+
+    <div class="content">
+        <p>Role a página para ver o efeito do menu sticky e da caixa FIXED no canto inferior.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at lectus a justo convallis viverra. Duis nec libero neque. Etiam dapibus ligula vitae nulla sollicitudin varius. Curabitur ac felis ac arcu consectetur viverra.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at lectus a justo convallis viverra. Duis nec libero neque. Etiam dapibus ligula vitae nulla sollicitudin varius. Curabitur ac felis ac arcu consectetur viverra.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at lectus a justo convallis viverra. Duis nec libero neque. Etiam dapibus ligula vitae nulla sollicitudin varius. Curabitur ac felis ac arcu consectetur viverra.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at lectus a justo convallis viverra. Duis nec libero neque. Etiam dapibus ligula vitae nulla sollicitudin varius. Curabitur ac felis ac arcu consectetur viverra.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at lectus a justo convallis viverra. Duis nec libero neque. Etiam dapibus ligula vitae nulla sollicitudin varius. Curabitur ac felis ac arcu consectetur viverra.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at lectus a justo convallis viverra. Duis nec libero neque. Etiam dapibus ligula vitae nulla sollicitudin varius. Curabitur ac felis ac arcu consectetur viverra.</p>
+    </div>
+
+    <!-- Caixa fixa no canto inferior -->
+    <div class="box-fixed">
+        FIXED
+    </div>
+
+</body>
+</html>
